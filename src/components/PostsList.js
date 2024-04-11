@@ -6,7 +6,7 @@ function PostsList() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:5001/posts')
+        fetch('http://localhost:4000/posts')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
